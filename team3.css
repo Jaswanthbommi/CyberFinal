@@ -1,0 +1,133 @@
+/*styles basics*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+.container {
+    display: grid;                 /* applying a grid structure to my page*/
+    grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper>.left-side>div {       /*traversing down and applying style*/
+    margin-right: 22px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.nav-wrapper-for-link {
+    height: 24px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.6s;           /*animation in CSS*/
+}
+
+.active-nav-for-link {
+    border-bottom: 1.1px solid black;
+}
+
+.active-nav-for-link a {
+    color: black !important;
+}
+
+.nav-wrapper-for-link a {
+    color: #df4a4a;
+    text-decoration: solid;
+    transition: color 0.6s;
+}
+
+.nav-wrapper-for-link:hover {             /*on hover,a different style is applied*/
+    border-bottom: 1.1px solid rgb(2, 2, 2);
+}
+
+.nav-wrapper-for-link a:hover {
+    color: rgb(2, 2, 2);
+}
+
+/*styles for data*/
+.topics-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*for having 3 columns, a grid structure*/
+
+}
+
+.topic-wrapper {
+    position: relative;
+}
+
+.img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+
+}
+
+.img-data-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-data-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+}
+
+.image-blur {                /*this will provide a blurriness*/
+    transition: 0.9s;
+    filter: brightness(15%);
+
+}
+
+.img-data-wrapper:hover .subtitle {
+    color: rgb(12, 12, 12);
+    font-weight: 610;
+
+}
+
+.logo-wrapper img {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-wrapper img {
+    width: 100%;
+}
+
+.profile-data-wrapper {
+    padding: 30px;
+}
+
+.profile-data-wrapper h1 {
+    color: rgb(214, 52, 71);
+}
+
+
+
+
+
+

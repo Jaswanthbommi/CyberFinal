@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About me page</title>
+    <link rel="stylesheet" href="team3.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-wrapper-for-link  active-nav-for-link">
+                    <a href="team3.html">ABOUT ME</a>
+                </div>
+                <div class="nav-wrapper-for-link">
+                    <a href="team3_7.html">Thank you note</a>
+                </div>
+                <div class="nav-wrapper-for-link">
+                    <a href="index.html">Back to mainpage</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="nav-wrapper-for-name">
+                    Manish Bondhi
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="data-wrapper">
+        <div class="topics-wrapper">
+            <div class="topic-wrapper">
+                <div class="img-background" style="background-image:url(education.jpg)">
+                </div>
+                <div class="img-data-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="elogo.jpg" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <a href="team3_1.html" style="color: white;">MY EDUCATIONAL BACKGROUND</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="topic-wrapper">
+                <div class="img-background" style="background-image:url(coding.jpg)">
+                </div>
+                <div class="img-data-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="clogo.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <a href="team3_2.html" style="color: white;">MY CODING BACKGROUND</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="topic-wrapper">
+                <div class="img-background" style="background-image:url(hobbies.jpg)">
+                </div>
+                <div class="img-data-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="hlogo.jpg" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <a href="team3_3.html" style="color: white;">My Hobbies</a>
+                    </div>
+                </div>
+
+        </div>
+
+
+</body>
+<script>
+    portfolioItems = document.querySelectorAll('.topic-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+        });
+    });
+</script>
+
+</html>

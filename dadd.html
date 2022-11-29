@@ -1,0 +1,77 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="dadd.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Add Product</div>
+      <div class="input box">
+        <form action="#">
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1" />
+            <input type="radio" name="gender" id="dot-2" />
+            <input type="radio" name="gender" id="dot-3" />
+            <label for="Gender">Choose a gender:</label>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Unisex</span>
+              </label>
+            </div>
+          <div class="input box">
+            <span class="details">Brand</span>
+            <label for="Brand">Choose a brand:</label>
+            <select name="brand" id="brand">
+              <option value="Zara">Zara</option>
+              <option value="HandM">H&M</option>
+              <option value="Macys">Macy's</option>
+              <option value="JCPenny">JC Penny</option>
+              <option value="Kohls">Kohls</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label for="Category">Choose a category:</label>
+            <select name="category" id="catagory">
+              <option value="Sweaters">Sweaters</option>
+              <option value="Pants">Pants</option>
+              <option value="Shirts">Shirts</option>
+              <option value="Jackets">Jackets</option>
+              <option value="Hoodies">Hoodies</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Cost</span>
+            <input type="text" placeholder="Enter the cost:" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Discount Rate</span>
+            <input
+              type="text"
+              placeholder="Enter the discount rate:"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <span class="details">Quantity</span>
+            <input type="text" placeholder="Enter the quantity:" required />
+          </div>
+
+          <div class="button">
+            <input type="submit" value="Add Product" />
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
